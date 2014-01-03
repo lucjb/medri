@@ -232,31 +232,17 @@ $(1-\epsilon)\lVert u-v \rVert^{2} \le \lVert f(u)-f(v) \rVert^{2}\le (1+\epsilo
 
 \begin{frame}
 \frametitle{Empirical Study}
-\framesubtitle{Relative error}
-
-\centering
-$(1-\epsilon)\lVert u-v \rVert^{2} \le \lVert f(u)-f(v) \rVert^{2}\le (1+\epsilon)\lVert u-v \rVert^{2}$\\
-\medskip
-$1-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}}{\lVert u-v \rVert^{2} }\le 1+\epsilon$\\
-\medskip
-$-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}}{\lVert u-v \rVert^{2}} - 1\le \epsilon$\\
-\medskip
-$-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}-\lVert u-v \rVert^{2}}{\lVert u-v \rVert^{2}}\le \epsilon$\\
-  	
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{Empirical Study}
 \framesubtitle{Set up}
 \begin{itemize}
   \item Natural language corpus with 140000 unique terms
-  \item Filtered out low frequency terms
+  \item Filtered out low frequency terms, $n=42905$
   \item Plain VSM vectors (original space is represented by the co-occurrence matrix)
-  \item Random space dimension from 100 to 2000
+  \item Evaluated random space dimension ($k_{0}$) ranging from 100 to 2000
   \item Random space generated with the sparse Achlioptas distribution
-  \item Measured relative error ($\epsilon$) between high-dimensional vectors and low dimensional vectors
+  \item Pick two random vectors $u, v$, compute squared euclidean distance $\lVert u-v \rVert^{2}$ and $\lVert f(u)-f(v) \rVert^{2}$
+  \item Compute relative error as $\frac{\lVert f(u)-f(v) \rVert^{2}-\lVert u-v \rVert^{2}}{\lVert u-v \rVert^{2}}$ 
+  \item Sample size: $3000$
+  
 \end{itemize}
 \end{frame}
 
@@ -287,20 +273,89 @@ $-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}-\lVert u-v \rVert^{2}}{\lVert u
 
 \begin{frame}
 \frametitle{Empirical Study}
+\framesubtitle{Measuring $\epsilon$}
+
+How can we compute $\epsilon$ from these histograms?
+\medskip
+\begin{center}
+$(1-\epsilon)\lVert u-v \rVert^{2} \le \lVert f(u)-f(v) \rVert^{2}\le (1+\epsilon)\lVert u-v \rVert^{2}$\\
+\medskip
+$1-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}}{\lVert u-v \rVert^{2} }\le 1+\epsilon$\\
+\medskip
+$-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}}{\lVert u-v \rVert^{2}} - 1\le \epsilon$\\
+\medskip
+$-\epsilon \le \frac{\lVert f(u)-f(v) \rVert^{2}-\lVert u-v \rVert^{2}}{\lVert u-v \rVert^{2}}\le \epsilon$\\
+\medskip
+$\epsilon = \max(\lvert \mu - \sigma\rvert, \lvert \mu + \sigma\rvert)$\\
+\end{center}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Empirical Study}
 \framesubtitle{Results}
- 		\begin{figure}
-		\includegraphics[scale=0.46]{epsilon.png}
-	\end{figure}
+
+\footnotesize
+\begin{tikzpicture}
+    \draw (0, 0) node[inner sep=0] {\includegraphics[scale=0.85]{epsilon.eps}};
+    \draw (0, 2) node{$k_{0}=\frac{4+2\beta}{\frac{\epsilon^{2}}{2}-\frac{\epsilon^{3}}{3}}\log n $};
+\end{tikzpicture}
+
 \end{frame} 
 \begin{frame}
 \frametitle{Empirical Study}
+\framesubtitle{Computing $\beta$}
 \footnotesize
 \begin{tikzpicture}
     \draw (0, 0) node[inner sep=0] {\includegraphics[scale=0.9]{epsilonFit.eps}};
-    \draw (1, 1) node {Achlioptas Model:  $p(\epsilon)=\frac{4+2\beta}{k_{0}}\log n$};
-    \draw (1, 2) node {$p(\epsilon) = \frac{\epsilon^{2}}{2}-\frac{\epsilon^{3}}{3}$};
+    \draw (0, 2) node{Achlioptas Model: $k_{0}=\frac{4+2\beta}{\frac{\epsilon^{2}}{2}-\frac{\epsilon^{3}}{3}}\log n \Rightarrow$};
+    \draw (1, 1) node {$\frac{\epsilon^{2}}{2}-\frac{\epsilon^{3}}{3}=\frac{4+2\beta}{k_{0}}\log n$};
 \end{tikzpicture}
 \end{frame} 
+
+\begin{frame}
+\frametitle{Empirical Study}
+\framesubtitle{Computing $\beta$}
+\footnotesize
+\begin{tikzpicture}
+    \draw (0, 0) node[inner sep=0] {\includegraphics[scale=0.9]{epsilonFit.eps}};
+    \draw (0, 2) node{Achlioptas Model: $k_{0}=\frac{4+2\beta}{\frac{\epsilon^{2}}{2}-\frac{\epsilon^{3}}{3}}\log n \Rightarrow$};
+    \draw (1, 1) node {$\frac{\epsilon^{2}}{2}-\frac{\epsilon^{3}}{3}=\frac{4+2\beta}{k_{0}}\log n$};
+    \draw (1, 0) node {$\beta=0.269, Pr(\epsilon) = 1-n^{-\beta} = 1-42905^{-0.269}=0.94$};
+\end{tikzpicture}
+\end{frame} 
+
+\begin{frame}
+\frametitle{Empirical Study}
+\framesubtitle{Trade offs}
+ 		\begin{figure}
+		\includegraphics[scale=0.9]{tradeoffs1.eps}
+	\end{figure}
+\end{frame} 
+
+\begin{frame}
+\frametitle{Empirical Study}
+\framesubtitle{Trade offs}
+ 		\begin{figure}
+		\includegraphics[scale=0.9]{tradeoffs2.eps}
+	\end{figure}
+\end{frame} 
+
+\begin{frame}
+\frametitle{Empirical Study}
+\framesubtitle{Design}
+
+\begin{itemize}
+  \item Determine how much data is available: $n$
+  \item Compute $\beta$ for several certainty levels (99, 94, 90 typically)
+  \item Compute and plot $k_{0}(\epsilon)$ for each $p$ level
+  \item Choose $k_{0}$ according to resources constraints and accepted $\epsilon$
+  \item More data? Start again. increase $k_{0}$, or accept more error or change p level
+\end{itemize}
+\end{frame} 
+
+
 
 \begin{frame}
 	\frametitle{Resultados}

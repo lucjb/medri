@@ -5,9 +5,9 @@ min=-1. #min value
 width=(max-min)/n #interval width
 #function used to map a value to the intervals
 hist(x,width)=width*floor(x/width)+width/2.0
-set term png 
+#set term png 
 #set output terminal and file
-set output "medri/histogramAll.png"
+set output "histogramAll.png"
 set xrange [-0.5:0.5]
 #set yrange [0:0.1]
 #to put an empty boundary around the
@@ -52,7 +52,6 @@ fit gauss3(x) 'hist3.temp' u 1:($2) via s3, m3
 
 
 #plot 'hist1.temp' u 1:($2) w boxes lc rgb"red" title 'data', gauss(x) title 'Gaussian fit', 'hist2.temp' u 1:($2) w boxes lc rgb"blue" title 'data', gauss10(x) title 'Gaussian fit', 'hist3.temp' u 1:($2) w boxes lc rgb"green" title 'data', gauss8(x) title 'Gaussian fit'
-
 
 plot 'hist1.temp' u 1:2 w boxes lc rgb"red" title 'k=100', 'hist2.temp' u 1:2 w boxes lc rgb"blue" title 'k=500', 'hist3.temp' u 1:2 w boxes lc rgb"black" title 'k=2000', gauss1(x) lc rgb"green" notitle, gauss2(x) lc rgb"green" notitle, gauss3(x) lc rgb"green" notitle
 

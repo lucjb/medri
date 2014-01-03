@@ -5,10 +5,10 @@ min=-1. #min value
 width=(max-min)/n #interval width
 #function used to map a value to the intervals
 hist(x,width)=width*floor(x/width)+width/2.0
-set term png 
+set term png
 #set output terminal and file
-set output "medri/histogram2000.png"
-set xrange [-0.2:0.2]
+set output "histogram2000.png"
+set xrange [-0.1:0.1]
 #set yrange [0:0.1]
 #to put an empty boundary around the
 #data inside an autoscaled graph.
@@ -29,11 +29,18 @@ gauss(x) = 1/(2*pi*s**2)**0.5*exp(-(x-m)**2/(2*s**2))
 fit gauss(x) 'hist.temp' u 1:($2) via s, m
 
 
+set xtics (STATS_mean-STATS_stddev, STATS_mean, STATS_mean+STATS_stddev)
 
-set label 1 gprintf("Mean = %g", STATS_mean) at 0.07,8
-set label 2 gprintf("Std. Err = %g", STATS_stddev/sqrt(STATS_records)) at 0.07,7
-set label 3 "Dim: 2000" at 0.07,6
-set arrow from STATS_mean,0 to STATS_mean,12 nohead lc rgb 'blue'
+set format x  "%1f"
+set label 1 "Dim: 2000" at -0.1,11
+set label 2 gprintf("Mean = %g", STATS_mean) at -0.1,10
+set label 3 gprintf("Std. Dev. = %g", STATS_stddev) at 0.055,9
+set label 4 gprintf("Epsilon = %g", STATS_stddev+STATS_mean) at 0.055,8
+set label 5 gprintf("Bin width: %g", width) at 0.055,7	
+
+set arrow from STATS_mean,0 to STATS_mean,12 nohead lc rgb 'blue' front
+set arrow from STATS_mean+STATS_stddev,0 to STATS_mean+STATS_stddev,4.3 nohead lc rgb 'blue' front
+set arrow from STATS_mean-STATS_stddev,0 to STATS_mean-STATS_stddev,5 nohead lc rgb 'blue' front
 plot 'hist.temp' u 1:($2) w boxes lc rgb"green" title 'data',  gauss(x) title 'Gaussian fit' lc rgb"red"
 
 

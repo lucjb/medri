@@ -1,0 +1,17 @@
+\documentclass{scrreprt}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[miktex]{gnuplottex}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{figure}[htbp]
+\centering
+\begin{gnuplot}[terminal=latex]
+plot [0:2*pi] sin(x) title 'Sine', cos(x) title 'Cosine'
+\end{gnuplot}
+\end{figure}
+
+\end{document}

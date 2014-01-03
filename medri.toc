@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Intro}{3}{0}{1}
+\beamer@sectionintoc {2}{Random Projections}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{The Random Projections Approach}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Algebraic Interpretation}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Theoretical support}{13}{0}{2}
+\beamer@sectionintoc {3}{Empirical Study}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Relative Error}{15}{0}{3}
+\beamer@sectionintoc {4}{An\IeC {\'a}lisis}{29}{0}{4}
