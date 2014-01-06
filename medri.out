@@ -1,8 +1,5 @@
 \BOOKMARK [2][]{Outline0.1}{Intro}{}% 1
 \BOOKMARK [2][]{Outline0.2}{Random Projections}{}% 2
-\BOOKMARK [3][]{Outline0.2.1.7}{The Random Projections Approach}{Outline0.2}% 3
-\BOOKMARK [3][]{Outline0.2.2.11}{Algebraic Interpretation}{Outline0.2}% 4
-\BOOKMARK [3][]{Outline0.2.3.13}{Theoretical support}{Outline0.2}% 5
-\BOOKMARK [2][]{Outline0.3}{Empirical Study}{}% 6
-\BOOKMARK [3][]{Outline0.3.1.15}{Relative Error}{Outline0.3}% 7
-\BOOKMARK [2][]{Outline0.4}{An\341lisis}{}% 8
+\BOOKMARK [2][]{Outline0.3}{Empirical Study}{}% 3
+\BOOKMARK [2][]{Outline0.4}{Trade offs}{}% 4
+\BOOKMARK [2][]{Outline0.5}{Random Projections Design}{}% 5

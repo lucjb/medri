@@ -52,7 +52,7 @@ set ylabel "Random Space Dimension"
 set xlabel "{/Symbol e}"
 
 #set terminal png
-set terminal postscript eps color enhanced
+set terminal postscript eps color enhanced 15
 
 set output "tradeoffs1.eps"
 plot (0.075+0.269*b1)*log(n)/(((x**2)/2)-((x**3)/3)) lt rgb"red" title "p=0.99",  (0.075+0.269*b2)*log(n)/(((x**2)/2)-((x**3)/3)) lt rgb "green" title "p=0.94", (0.075+0.269*b3)*log(n)/(((x**2)/2)-((x**3)/3)) lt rgb"blue" title "p=0.90",  (0.075+0.269*b4)*log(n)/(((x**2)/2)-((x**3)/3)) lt rgb"black" title "p=0.80"
@@ -62,9 +62,11 @@ set output "tradeoffs2.eps"
 
 plot (0.075+0.269*b12)*log(n2)/(((x**2)/2)-((x**3)/3)) lt rgb"red" title "p=0.99", (0.075+0.269*b22)*log(n2)/(((x**2)/2)-((x**3)/3))  lt rgb"green" title "p=0.94", (0.075+0.269*b32)*log(n2)/(((x**2)/2)-((x**3)/3))  lt rgb"blue" title "p=0.90",  (0.075+0.269*b42)*log(n2)/(((x**2)/2)-((x**3)/3))   lt rgb"black" title "p=0.80"
 
-set yrange [0.85:1]
-set xrange [40000:100000]
-set xtics 10000
-set ytics 0.05
+set yrange [1000:2000]
+set xrange [0.05:0.075	]
+set xtics add (0.065, 0.068)
+set ytics ((0.075+0.269*b12)*log(n2)/(((0.05**2)/2)-((0.05**3)/3)), (0.075+0.269*b1)*log(n)/(((0.05**2)/2)-((0.05**3)/3)))
 set output "tradeoffs3.eps"
-plot 1-(x**(-b1)), 1-(x**(-b2)), 1-(x**(-b3))
+plot (0.075+0.269*b1)*log(n)/(((x**2)/2)-((x**3)/3)) lt rgb"red" title "p=0.99, n", (0.075+0.269*b12)*log(n2)/(((x**2)/2)-((x**3)/3)) lt rgb"red" title "p=0.99 10n"
+
+

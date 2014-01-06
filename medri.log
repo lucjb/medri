@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.16)  3 JAN 2014 18:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.16)  6 JAN 2014 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,11 +1224,11 @@ LaTeX Info: Redefining \% on input line 2.
 ] [7
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 123.
+LaTeX Font Info:    Try loading font information for U+msa on input line 121.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+LaTeX Font Info:    Try loading font information for U+msb on input line 121.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -1236,64 +1236,62 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 ] [9
 
-] [10
-
 ]
-LaTeX Font Info:    Try loading font information for U+bbm on input line 164.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 156.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [11
+) [10
+
+] [11
 
 ] [12
 
-] [13
-
 ]
-Overfull \hbox (13.33246pt too wide) detected at line 228
+Overfull \hbox (13.33246pt too wide) detected at line 219
 \OT1/cmss/m/it/10.95 r[] \OT1/cmss/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^B []
  []
 
-[14
+[13
 
-] [15
+] [14
 
-] <histogram400.png, id=175, 642.4pt x 481.8pt>
+] <histogram400.png, id=154, 642.4pt x 481.8pt>
 File: histogram400.png Graphic file (type png)
  <use histogram400.png>
-Package pdftex.def Info: histogram400.png used on input line 256.
+Package pdftex.def Info: histogram400.png used on input line 245.
 (pdftex.def)             Requested size: 295.50758pt x 221.63068pt.
 
-Overfull \vbox (9.02419pt too high) detected at line 256
+Overfull \vbox (9.02419pt too high) detected at line 245
+ []
+
+[15
+
+ <./histogram400.png>] <histogram2000.png, id=163, 642.4pt x 481.8pt>
+File: histogram2000.png Graphic file (type png)
+
+<use histogram2000.png>
+Package pdftex.def Info: histogram2000.png used on input line 253.
+(pdftex.def)             Requested size: 295.50758pt x 221.63068pt.
+
+Overfull \vbox (9.02419pt too high) detected at line 253
  []
 
 [16
 
- <./histogram400.png>] <histogram2000.png, id=183, 642.4pt x 481.8pt>
-File: histogram2000.png Graphic file (type png)
+ <./histogram2000.png>] <histogramAll.png, id=171, 642.4pt x 481.8pt>
+File: histogramAll.png Graphic file (type png)
 
-<use histogram2000.png>
-Package pdftex.def Info: histogram2000.png used on input line 264.
+<use histogramAll.png>
+Package pdftex.def Info: histogramAll.png used on input line 261.
 (pdftex.def)             Requested size: 295.50758pt x 221.63068pt.
 
-Overfull \vbox (9.02419pt too high) detected at line 264
+Overfull \vbox (9.02419pt too high) detected at line 261
  []
 
 [17
 
- <./histogram2000.png>] <histogramAll.png, id=191, 642.4pt x 481.8pt>
-File: histogramAll.png Graphic file (type png)
-
-<use histogramAll.png>
-Package pdftex.def Info: histogramAll.png used on input line 272.
-(pdftex.def)             Requested size: 295.50758pt x 221.63068pt.
-
-Overfull \vbox (9.02419pt too high) detected at line 272
- []
-
-[18
-
- <./histogramAll.png>] [19
+ <./histogramAll.png>] [18
 
 ]
 Package epstopdf Info: Source file: <epsilon.eps>
@@ -1304,16 +1302,16 @@ Package epstopdf Info: Source file: <epsilon.eps>
 (epstopdf)                    size: 8513 bytes
 (epstopdf)             Command: <repstopdf --outfile=epsilon-eps-converted-to.p
 df epsilon.eps>
-(epstopdf)             \includegraphics on input line 305.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
-<epsilon-eps-converted-to.pdf, id=207, 361.35pt x 252.945pt>
+<epsilon-eps-converted-to.pdf, id=186, 361.35pt x 252.945pt>
 File: epsilon-eps-converted-to.pdf Graphic file (type pdf)
 
 <use epsilon-eps-converted-to.pdf>
-Package pdftex.def Info: epsilon-eps-converted-to.pdf used on input line 305.
+Package pdftex.def Info: epsilon-eps-converted-to.pdf used on input line 294.
 (pdftex.def)             Requested size: 307.14896pt x 215.00426pt.
- [20
+ [19
 
  <./epsilon-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <epsilonFit.eps>
@@ -1324,21 +1322,21 @@ Package epstopdf Info: Source file: <epsilonFit.eps>
 (epstopdf)                    size: 9086 bytes
 (epstopdf)             Command: <repstopdf --outfile=epsilonFit-eps-converted-t
 o.pdf epsilonFit.eps>
-(epstopdf)             \includegraphics on input line 315.
+(epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
 
-<epsilonFit-eps-converted-to.pdf, id=226, 361.35pt x 252.945pt>
+<epsilonFit-eps-converted-to.pdf, id=206, 361.35pt x 252.945pt>
 File: epsilonFit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use epsilonFit-eps-converted-to.pdf>
-Package pdftex.def Info: epsilonFit-eps-converted-to.pdf used on input line 315
+Package pdftex.def Info: epsilonFit-eps-converted-to.pdf used on input line 304
 .
 (pdftex.def)             Requested size: 325.21199pt x 227.64839pt.
 
-Overfull \vbox (3.04189pt too high) detected at line 315
+Overfull \vbox (3.04189pt too high) detected at line 304
  []
 
-[21
+[20
 
  <./epsilonFit-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <epsilonFit.eps>
@@ -1349,104 +1347,109 @@ Package epstopdf Info: Source file: <epsilonFit.eps>
 (epstopdf)                    size: 9086 bytes
 (epstopdf)             Command: <repstopdf --outfile=epsilonFit-eps-converted-t
 o.pdf epsilonFit.eps>
-(epstopdf)             \includegraphics on input line 327.
+(epstopdf)             \includegraphics on input line 316.
 Package epstopdf Info: Output file is already uptodate.
 File: epsilonFit-eps-converted-to.pdf Graphic file (type pdf)
  <use epsilonFit-eps-converted-to.pdf>
-Package pdftex.def Info: epsilonFit-eps-converted-to.pdf used on input line 327
+Package pdftex.def Info: epsilonFit-eps-converted-to.pdf used on input line 316
 .
 (pdftex.def)             Requested size: 325.21199pt x 227.64839pt.
 
-Overfull \vbox (3.04189pt too high) detected at line 327
+Overfull \vbox (3.04189pt too high) detected at line 316
  []
 
-[22
+[21
 
 ]
+Package epstopdf Info: Source file: <epsilon-sparse.eps>
+(epstopdf)                    date: 2014-01-06 12:04:34
+(epstopdf)                    size: 20863 bytes
+(epstopdf)             Output file: <epsilon-sparse-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-01-06 12:05:38
+(epstopdf)                    size: 8396 bytes
+(epstopdf)             Command: <repstopdf --outfile=epsilon-sparse-eps-convert
+ed-to.pdf epsilon-sparse.eps>
+(epstopdf)             \includegraphics on input line 328.
+Package epstopdf Info: Output file is already uptodate.
+ <epsilon-sparse-eps-converted-to.pdf, id=229, 361.35pt x 252.945pt>
+File: epsilon-sparse-eps-converted-to.pdf Graphic file (type pdf)
+
+<use epsilon-sparse-eps-converted-to.pdf>
+Package pdftex.def Info: epsilon-sparse-eps-converted-to.pdf used on input line
+ 328.
+(pdftex.def)             Requested size: 307.14896pt x 215.00426pt.
+ [22
+
+ <./epsilon-sparse-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tradeoffs1.eps>
-(epstopdf)                    date: 2014-01-03 18:00:04
-(epstopdf)                    size: 28739 bytes
+(epstopdf)                    date: 2014-01-06 11:27:34
+(epstopdf)                    size: 28630 bytes
 (epstopdf)             Output file: <tradeoffs1-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-03 17:59:44
-(epstopdf)                    size: 10241 bytes
+(epstopdf)                    date: 2014-01-06 11:27:42
+(epstopdf)                    size: 10208 bytes
 (epstopdf)             Command: <repstopdf --outfile=tradeoffs1-eps-converted-t
 o.pdf tradeoffs1.eps>
-(epstopdf)             \includegraphics on input line 335.
-runsystem(repstopdf --outfile=tradeoffs1-eps-converted-to.pdf tradeoffs1.eps)..
-.executed safely (allowed).
-
-Package epstopdf Info: Result file: <tradeoffs1-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-03 18:00:10
-(epstopdf)                    size: 10241 bytes.
- <tradeoffs1-eps-converted-to.pdf, id=249, 361.35pt x 252.945pt>
+(epstopdf)             \includegraphics on input line 337.
+Package epstopdf Info: Output file is already uptodate.
+ <tradeoffs1-eps-converted-to.pdf, id=245, 361.35pt x 252.945pt>
 File: tradeoffs1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tradeoffs1-eps-converted-to.pdf>
-Package pdftex.def Info: tradeoffs1-eps-converted-to.pdf used on input line 335
+Package pdftex.def Info: tradeoffs1-eps-converted-to.pdf used on input line 337
 .
-(pdftex.def)             Requested size: 325.21199pt x 227.64839pt.
+(pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (15.0419pt too high) detected at line 335
+Overfull \vbox (9.9858pt too high) detected at line 337
  []
 
 [23
 
  <./tradeoffs1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tradeoffs2.eps>
-(epstopdf)                    date: 2014-01-03 18:00:04
-(epstopdf)                    size: 28738 bytes
+(epstopdf)                    date: 2014-01-06 11:27:34
+(epstopdf)                    size: 28627 bytes
 (epstopdf)             Output file: <tradeoffs2-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-03 17:59:45
-(epstopdf)                    size: 10245 bytes
+(epstopdf)                    date: 2014-01-06 11:27:43
+(epstopdf)                    size: 10188 bytes
 (epstopdf)             Command: <repstopdf --outfile=tradeoffs2-eps-converted-t
 o.pdf tradeoffs2.eps>
-(epstopdf)             \includegraphics on input line 343.
-runsystem(repstopdf --outfile=tradeoffs2-eps-converted-to.pdf tradeoffs2.eps)..
-.executed safely (allowed).
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <tradeoffs2-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-03 18:00:11
-(epstopdf)                    size: 10245 bytes.
-
-<tradeoffs2-eps-converted-to.pdf, id=265, 361.35pt x 252.945pt>
+<tradeoffs2-eps-converted-to.pdf, id=260, 361.35pt x 252.945pt>
 File: tradeoffs2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tradeoffs2-eps-converted-to.pdf>
-Package pdftex.def Info: tradeoffs2-eps-converted-to.pdf used on input line 343
+Package pdftex.def Info: tradeoffs2-eps-converted-to.pdf used on input line 345
 .
-(pdftex.def)             Requested size: 325.21199pt x 227.64839pt.
+(pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (15.0419pt too high) detected at line 343
+Overfull \vbox (9.9858pt too high) detected at line 345
  []
 
 [24
 
  <./tradeoffs2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tradeoffs3.eps>
-(epstopdf)                    date: 2014-01-03 18:00:04
-(epstopdf)                    size: 22307 bytes
+(epstopdf)                    date: 2014-01-06 11:53:41
+(epstopdf)                    size: 20356 bytes
 (epstopdf)             Output file: <tradeoffs3-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-03 17:59:45
-(epstopdf)                    size: 9310 bytes
+(epstopdf)                    date: 2014-01-06 11:57:56
+(epstopdf)                    size: 8183 bytes
 (epstopdf)             Command: <repstopdf --outfile=tradeoffs3-eps-converted-t
 o.pdf tradeoffs3.eps>
-(epstopdf)             \includegraphics on input line 351.
-runsystem(repstopdf --outfile=tradeoffs3-eps-converted-to.pdf tradeoffs3.eps)..
-.executed safely (allowed).
+(epstopdf)             \includegraphics on input line 353.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <tradeoffs3-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-03 18:00:11
-(epstopdf)                    size: 9364 bytes.
-
-<tradeoffs3-eps-converted-to.pdf, id=281, 361.35pt x 252.945pt>
+<tradeoffs3-eps-converted-to.pdf, id=276, 361.35pt x 252.945pt>
 File: tradeoffs3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tradeoffs3-eps-converted-to.pdf>
-Package pdftex.def Info: tradeoffs3-eps-converted-to.pdf used on input line 351
+Package pdftex.def Info: tradeoffs3-eps-converted-to.pdf used on input line 353
 .
-(pdftex.def)             Requested size: 325.21199pt x 227.64839pt.
+(pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (15.0419pt too high) detected at line 351
+Overfull \vbox (9.9858pt too high) detected at line 353
  []
 
 [25
@@ -1457,27 +1460,7 @@ Overfull \vbox (15.0419pt too high) detected at line 351
 
 ] [28
 
-]
-Overfull \vbox (1.52333pt too high) detected at line 441
- []
-
-[29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
-
-] [35
-
-] [36
-
-] [37
+] [29
 
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1489,31 +1472,31 @@ Overfull \vbox (1.52333pt too high) detected at line 441
 \tf@snm=\write8
 \openout8 = `medri.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
  (./medri.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 591.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 591.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `medri.out' has not changed.
-(rerunfilecheck)             Checksum: 7C02628453D4B56DEBEB082AA2B71883;476.
+(rerunfilecheck)             Checksum: F22266283D6EAADD5A5F6ABEC2C56289;248.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 591.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
  ) 
 Here is how much of TeX's memory you used:
- 20003 strings out of 494997
- 373241 string characters out of 3180089
- 454445 words of memory out of 3000000
- 22620 multiletter control sequences out of 15000+200000
- 16760 words of font info for 66 fonts, out of 3000000 for 9000
+ 19924 strings out of 494997
+ 371983 string characters out of 3180089
+ 454371 words of memory out of 3000000
+ 22562 multiletter control sequences out of 15000+200000
+ 16496 words of font info for 64 fonts, out of 3000000 for 9000
  40 hyphenation exceptions out of 8191
- 49i,17n,62p,444b,785s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,60p,444b,785s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/lbernardi/.texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
@@ -1533,10 +1516,10 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msbm10.pfb>
-Output written on medri.pdf (37 pages, 272367 bytes).
+Output written on medri.pdf (29 pages, 259636 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
