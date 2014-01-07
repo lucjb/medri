@@ -4,7 +4,8 @@
 \usepackage{caption, subcaption}
 \usepackage {amsmath, amssymb, bbm, stackrel, color, colortbl}
 \usepackage{tikz}
-
+\definecolor{LightCyan}{rgb}{0.88,1,20}
+\definecolor{Gray}{gray}{0.9}
 \newcommand{\BigO}[1]{\ensuremath{\operatorname{O}\bigl(#1\bigr)}}
 
 \usetheme{Boadilla}
@@ -25,8 +26,9 @@
 
 
 % Title page
-\title[RI]{Query Expansion with Random Embeddings}
-\author[]{\\[4mm]Lucas Bernardi}
+\title[Query Expansion with Random Embeddings]{Query Expansion with Random Embeddings}
+\author[Lucas Bernardi]{\\[4mm]Lucas Bernardi}
+\institute{}
 \date{January 2014}
 
 
@@ -42,10 +44,10 @@
 	\frametitle{Query Expansion: Problem statement}
 	\bigskip
 	\begin{itemize}
-	\item In the context of Information Retrieval, Query Expansion is a method to increase recall and/or precision by modifying a user query
-  \item A specific case is the expansion of each term to related terms, increasing recall (and precision as a side effect)
-  \item Example: User query: soccer, expanded query: soccer football maradona
-  \item  The Problem: Learn to expand terms
+	\item In the context of Information Retrieval, Query Expansion is a method to improve recall and precision by modifying a user query
+  \item A specific case is the expansion of each term to \textit{related} terms, which mainly improves recall but also precision as a side effect
+  \item Example: User query: \texttt{soccer}, expanded query: \texttt{soccer football maradona}
+  \item  The Problem: \textbf{Learn to expand terms}
 	\end{itemize}
 \end{frame}
 
@@ -74,6 +76,32 @@
     \item Compute the related terms of a given term as its k-nearest neighbors
     \item The vector distance/similarity measure is a design decision, cosine similarity is widely adopted
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\small 
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+~        & play & soccer & week & favorite & sport & forget & ball & Football \\ \hline
+play     & 0    & 1      & 1    & 0        & 0     & 0      & 0    & 1        \\ \hline
+\rowcolor{LightCyan}
+soccer   & 1    & 0      & 1    & 1        & 1     & 1      & 1    & 0        \\ \hline
+week     & 1    & 1      & 0    & 0        & 0     & 0      & 0    & 0        \\ \hline
+favorite & 0    & 1      & 0    & 0        & 1     & 0      & 0    & 0        \\ \hline
+sport    & 1    & 1      & 0    & 1        & 0     & 0      & 0    & 1        \\ \hline
+forget   & 0    & 1      & 0    & 0        & 0     & 0      & 1    & 0        \\ \hline
+ball     & 0    & 1      & 0    & 0        & 0     & 1      & 0    & 0        \\ \hline
+\rowcolor{LightCyan}
+Football & 1    & 0      & 0    & 0        & 1     & 0      & 0    & 0        \\ \hline
+\end{tabular}
+
+\end{center}
+$s(soccer) = \begin{pmatrix} 1 & 0 & 1 & 1 & 1 & 1 & 1 & 0\end{pmatrix} $\\
+\medskip
+$s(Football) = \begin{pmatrix} 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \end{pmatrix} $\\
+\medskip
+$similarity(soccer, Football)=cos(s(soccer), s(football)) = \frac{1}{\sqrt 3} = 0.57$
 \end{frame}
 
 \begin{frame}
@@ -119,6 +147,40 @@
 		\end{itemize}
 	\end{itemize}
 \end{frame}	
+
+
+\begin{frame}
+	\frametitle{The Random Projections Approach}
+	\framesubtitle{Illustration}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+Document 1:\\
+We play soccer every week. Soccer is my favorite sport. Don't forget the soccer ball\\
+\medskip
+Context 1: play soccer week.\\
+Context 2: Soccer favorite sport.\\
+Context 3: forget soccer ball.\\
+\end{column}
+\begin{column}{0.5\textwidth}
+Document 2:\\
+Football is a popular sport. Do you play football?\\
+\medskip
+Context 1: Football popular sport\\
+Context 2: play football
+\end{column}
+\end{columns}
+\bigskip
+$s(\texttt{soccer}) = r(\texttt{play}) + r(\texttt{week}) + r(\texttt{favorite}) + r(\texttt{sport}) + r(\texttt{forget}) + r(\texttt{ball}) = $
+$\langle 10001 \rangle + \langle 10100 \rangle + \langle 00011 \rangle+ \langle00110 \rangle+ \langle 11000 \rangle+ \langle 10010 \rangle = \langle 41232\rangle $
+
+\medskip
+$s(\texttt{football}) =$
+$ r(\texttt{popular}) + r(\texttt{sport}) + r(\texttt{play}) = \langle 10010 \rangle + \langle 00110 \rangle + \langle 10001 \rangle = \langle 20121 \rangle$
+
+\medskip
+$cos(s(\texttt{soccer}), s(\texttt{football})) = cos(\langle 41232 \rangle, \langle 20121 \rangle) = 0.97$
+
+\end{frame}
 
 \begin{frame}
 	\frametitle{The Random Projections Approach}
@@ -393,6 +455,47 @@ $\epsilon = \max(\lvert \mu - \sigma\rvert, \lvert \mu + \sigma\rvert)$\\
 \end{itemize}
 \end{frame} 
 
+\section{High Level Metrics Correlations}
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{Hit Ratio}
+ 		\begin{figure}
+		\includegraphics[scale=0.88]{hr.eps}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{F-Score}
+ 		\begin{figure}
+		\includegraphics[scale=0.88]{fscore.eps}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{Recall}
+ 		\begin{figure}
+		\includegraphics[scale=0.88]{recall.eps}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{Recall}
+ 		\begin{figure}
+		\includegraphics[scale=0.88]{precision.eps}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{Recall}
+ 		\begin{figure}
+		\includegraphics[scale=0.88]{map.eps}
+	\end{figure}
+\end{frame}
 
 \begin{frame}%[allowframebreaks]
   \frametitle{References}    
