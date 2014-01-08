@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.16)  8 JAN 2014 10:26
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.16)  8 JAN 2014 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1391,15 +1391,20 @@ Package pdftex.def Info: epsilon-sparse-eps-converted-to.pdf used on input line
 
  <./epsilon-sparse-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tradeoffs1.eps>
-(epstopdf)                    date: 2014-01-06 11:27:34
+(epstopdf)                    date: 2014-01-08 16:48:03
 (epstopdf)                    size: 28630 bytes
 (epstopdf)             Output file: <tradeoffs1-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-06 11:27:42
-(epstopdf)                    size: 10208 bytes
+(epstopdf)                    date: 2014-01-08 16:47:43
+(epstopdf)                    size: 10206 bytes
 (epstopdf)             Command: <repstopdf --outfile=tradeoffs1-eps-converted-t
 o.pdf tradeoffs1.eps>
 (epstopdf)             \includegraphics on input line 399.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=tradeoffs1-eps-converted-to.pdf tradeoffs1.eps)..
+.executed safely (allowed).
+
+Package epstopdf Info: Result file: <tradeoffs1-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-01-08 16:48:08
+(epstopdf)                    size: 10208 bytes.
  <tradeoffs1-eps-converted-to.pdf, id=271, 361.35pt x 252.945pt>
 File: tradeoffs1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1415,15 +1420,20 @@ Overfull \vbox (9.9858pt too high) detected at line 399
 
  <./tradeoffs1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tradeoffs2.eps>
-(epstopdf)                    date: 2014-01-06 11:27:34
+(epstopdf)                    date: 2014-01-08 16:48:03
 (epstopdf)                    size: 28627 bytes
 (epstopdf)             Output file: <tradeoffs2-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-06 11:27:43
-(epstopdf)                    size: 10188 bytes
+(epstopdf)                    date: 2014-01-08 16:47:43
+(epstopdf)                    size: 10194 bytes
 (epstopdf)             Command: <repstopdf --outfile=tradeoffs2-eps-converted-t
 o.pdf tradeoffs2.eps>
 (epstopdf)             \includegraphics on input line 407.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=tradeoffs2-eps-converted-to.pdf tradeoffs2.eps)..
+.executed safely (allowed).
+
+Package epstopdf Info: Result file: <tradeoffs2-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-01-08 16:48:08
+(epstopdf)                    size: 10194 bytes.
 
 <tradeoffs2-eps-converted-to.pdf, id=287, 361.35pt x 252.945pt>
 File: tradeoffs2-eps-converted-to.pdf Graphic file (type pdf)
@@ -1440,15 +1450,20 @@ Overfull \vbox (9.9858pt too high) detected at line 407
 
  <./tradeoffs2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <tradeoffs3.eps>
-(epstopdf)                    date: 2014-01-06 11:53:41
-(epstopdf)                    size: 20356 bytes
+(epstopdf)                    date: 2014-01-08 16:48:03
+(epstopdf)                    size: 20313 bytes
 (epstopdf)             Output file: <tradeoffs3-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-06 11:57:56
-(epstopdf)                    size: 8183 bytes
+(epstopdf)                    date: 2014-01-08 16:47:43
+(epstopdf)                    size: 8186 bytes
 (epstopdf)             Command: <repstopdf --outfile=tradeoffs3-eps-converted-t
 o.pdf tradeoffs3.eps>
 (epstopdf)             \includegraphics on input line 415.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=tradeoffs3-eps-converted-to.pdf tradeoffs3.eps)..
+.executed safely (allowed).
+
+Package epstopdf Info: Result file: <tradeoffs3-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-01-08 16:48:09
+(epstopdf)                    size: 8186 bytes.
 
 <tradeoffs3-eps-converted-to.pdf, id=303, 361.35pt x 252.945pt>
 File: tradeoffs3-eps-converted-to.pdf Graphic file (type pdf)
@@ -1469,6 +1484,8 @@ Overfull \vbox (9.9858pt too high) detected at line 415
 
 ] [30
 
+] [31
+
 ]
 Package epstopdf Info: Source file: <hr.eps>
 (epstopdf)                    date: 2014-01-07 16:46:10
@@ -1478,20 +1495,20 @@ Package epstopdf Info: Source file: <hr.eps>
 (epstopdf)                    size: 6445 bytes
 (epstopdf)             Command: <repstopdf --outfile=hr-eps-converted-to.pdf hr
 .eps>
-(epstopdf)             \includegraphics on input line 465.
+(epstopdf)             \includegraphics on input line 479.
 Package epstopdf Info: Output file is already uptodate.
 
-<hr-eps-converted-to.pdf, id=337, 361.35pt x 252.945pt>
+<hr-eps-converted-to.pdf, id=343, 361.35pt x 252.945pt>
 File: hr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use hr-eps-converted-to.pdf>
-Package pdftex.def Info: hr-eps-converted-to.pdf used on input line 465.
+Package pdftex.def Info: hr-eps-converted-to.pdf used on input line 479.
 (pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (9.9858pt too high) detected at line 465
+Overfull \vbox (9.9858pt too high) detected at line 479
  []
 
-[31
+[32
 
  <./hr-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <fscore.eps>
@@ -1502,20 +1519,20 @@ Package epstopdf Info: Source file: <fscore.eps>
 (epstopdf)                    size: 6679 bytes
 (epstopdf)             Command: <repstopdf --outfile=fscore-eps-converted-to.pd
 f fscore.eps>
-(epstopdf)             \includegraphics on input line 473.
+(epstopdf)             \includegraphics on input line 487.
 Package epstopdf Info: Output file is already uptodate.
 
-<fscore-eps-converted-to.pdf, id=349, 361.35pt x 252.945pt>
+<fscore-eps-converted-to.pdf, id=355, 361.35pt x 252.945pt>
 File: fscore-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fscore-eps-converted-to.pdf>
-Package pdftex.def Info: fscore-eps-converted-to.pdf used on input line 473.
+Package pdftex.def Info: fscore-eps-converted-to.pdf used on input line 487.
 (pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (9.9858pt too high) detected at line 473
+Overfull \vbox (9.9858pt too high) detected at line 487
  []
 
-[32
+[33
 
  <./fscore-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <recall.eps>
@@ -1526,20 +1543,20 @@ Package epstopdf Info: Source file: <recall.eps>
 (epstopdf)                    size: 6472 bytes
 (epstopdf)             Command: <repstopdf --outfile=recall-eps-converted-to.pd
 f recall.eps>
-(epstopdf)             \includegraphics on input line 482.
+(epstopdf)             \includegraphics on input line 496.
 Package epstopdf Info: Output file is already uptodate.
 
-<recall-eps-converted-to.pdf, id=361, 361.35pt x 252.945pt>
+<recall-eps-converted-to.pdf, id=367, 361.35pt x 252.945pt>
 File: recall-eps-converted-to.pdf Graphic file (type pdf)
 
 <use recall-eps-converted-to.pdf>
-Package pdftex.def Info: recall-eps-converted-to.pdf used on input line 482.
+Package pdftex.def Info: recall-eps-converted-to.pdf used on input line 496.
 (pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (9.9858pt too high) detected at line 482
+Overfull \vbox (9.9858pt too high) detected at line 496
  []
 
-[33
+[34
 
  <./recall-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <precision.eps>
@@ -1550,61 +1567,65 @@ Package epstopdf Info: Source file: <precision.eps>
 (epstopdf)                    size: 6575 bytes
 (epstopdf)             Command: <repstopdf --outfile=precision-eps-converted-to
 .pdf precision.eps>
-(epstopdf)             \includegraphics on input line 490.
+(epstopdf)             \includegraphics on input line 504.
 Package epstopdf Info: Output file is already uptodate.
 
-<precision-eps-converted-to.pdf, id=373, 361.35pt x 252.945pt>
+<precision-eps-converted-to.pdf, id=379, 361.35pt x 252.945pt>
 File: precision-eps-converted-to.pdf Graphic file (type pdf)
 
 <use precision-eps-converted-to.pdf>
-Package pdftex.def Info: precision-eps-converted-to.pdf used on input line 490.
+Package pdftex.def Info: precision-eps-converted-to.pdf used on input line 504.
 
 (pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
 
-Overfull \vbox (9.9858pt too high) detected at line 490
- []
-
-[34
-
- <./precision-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <map.eps>
-(epstopdf)                    date: 2014-01-07 16:46:10
-(epstopdf)                    size: 20294 bytes
-(epstopdf)             Output file: <map-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-01-07 16:46:38
-(epstopdf)                    size: 6662 bytes
-(epstopdf)             Command: <repstopdf --outfile=map-eps-converted-to.pdf m
-ap.eps>
-(epstopdf)             \includegraphics on input line 498.
-Package epstopdf Info: Output file is already uptodate.
-
-<map-eps-converted-to.pdf, id=385, 361.35pt x 252.945pt>
-File: map-eps-converted-to.pdf Graphic file (type pdf)
-
-<use map-eps-converted-to.pdf>
-Package pdftex.def Info: map-eps-converted-to.pdf used on input line 498.
-(pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
-
-Overfull \vbox (9.9858pt too high) detected at line 498
+Overfull \vbox (9.9858pt too high) detected at line 504
  []
 
 [35
 
- <./map-eps-converted-to.pdf>]
-Overfull \vbox (46.30765pt too high) detected at line 532
+ <./precision-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <map.eps>
+(epstopdf)                    date: 2014-01-08 16:44:35
+(epstopdf)                    size: 20331 bytes
+(epstopdf)             Output file: <map-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-01-08 16:44:48
+(epstopdf)                    size: 6662 bytes
+(epstopdf)             Command: <repstopdf --outfile=map-eps-converted-to.pdf m
+ap.eps>
+(epstopdf)             \includegraphics on input line 512.
+Package epstopdf Info: Output file is already uptodate.
+
+<map-eps-converted-to.pdf, id=391, 361.35pt x 252.945pt>
+File: map-eps-converted-to.pdf Graphic file (type pdf)
+
+<use map-eps-converted-to.pdf>
+Package pdftex.def Info: map-eps-converted-to.pdf used on input line 512.
+(pdftex.def)             Requested size: 317.98898pt x 222.59229pt.
+
+Overfull \vbox (9.9858pt too high) detected at line 512
  []
 
 [36
+
+ <./map-eps-converted-to.pdf>] [37
+
+] [38
+
+]
+Overfull \vbox (46.30765pt too high) detected at line 576
+ []
+
+[39
 
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]pdfTeX warn
 ing (ext4): destination with the same identifier (name{beamerbibSulic2010}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.557 \end{frame}
-                  [37
+l.601 \end{frame}
+                  [40
 
-] [38
+] [41
 
 ]
 \tf@nav=\write6
@@ -1616,14 +1637,14 @@ l.557 \end{frame}
 \tf@snm=\write8
 \openout8 = `medri.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 581.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 581.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 625.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 625.
  (./medri.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 581.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 581.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 625.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 625.
 Package rerunfilecheck Info: File `medri.out' has not changed.
 (rerunfilecheck)             Checksum: BC56FD6B79974CF943BC82DA13FA834A;361.
 
@@ -1634,13 +1655,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 581.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 625.
  ) 
 Here is how much of TeX's memory you used:
- 20036 strings out of 494997
- 373764 string characters out of 3180089
- 457745 words of memory out of 3000000
- 22639 multiletter control sequences out of 15000+200000
+ 20049 strings out of 494997
+ 373883 string characters out of 3180089
+ 457748 words of memory out of 3000000
+ 22646 multiletter control sequences out of 15000+200000
  17294 words of font info for 68 fonts, out of 3000000 for 9000
  40 hyphenation exceptions out of 8191
  49i,17n,60p,444b,785s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1665,10 +1686,10 @@ type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on medri.pdf (38 pages, 315040 bytes).
+Output written on medri.pdf (41 pages, 318912 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 411 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 427 compressed objects within 5 object streams
+ 99 named destinations out of 1000 (max. 500000)
  195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

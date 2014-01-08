@@ -26,7 +26,7 @@
 
 
 % Title page
-\title[Query Expansion with Random Embeddings]{Query Expansion with Random Embeddings}
+\title[Query Expansion with Random Embeddings]{Query Expansion with Random Projections}
 \author[Lucas Bernardi]{\\[4mm]Lucas Bernardi}
 \institute{}
 \date{January 2014}
@@ -458,6 +458,20 @@ $\epsilon = \max(\lvert \mu - \sigma\rvert, \lvert \mu + \sigma\rvert)$\\
 \section{High Level Metrics Correlations}
 \begin{frame}
 \frametitle{High Level Metrics Correlations}
+\framesubtitle{Set up}
+\begin{itemize}
+  \item Goal: Evaluate concrete power to generate related terms
+  \item Manually built a dictionary of related terms for the tourism industry
+  \item Compute related terms for each word in the dictionary using different designs (dimensionality, random distribution, weighting scheme)
+  \item Performance is measured by comparing the expected terms and the actual computed terms
+  \item This can be seen as an information retrieval problem: For a given term, retrieve related terms.
+  \item Evaluation performed with standard IR metrics like Precision, Recall, F-Score and Mean Average Precision.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
 \framesubtitle{Hit Ratio}
  		\begin{figure}
 		\includegraphics[scale=0.88]{hr.eps}
@@ -495,6 +509,36 @@ $\epsilon = \max(\lvert \mu - \sigma\rvert, \lvert \mu + \sigma\rvert)$\\
  		\begin{figure}
 		\includegraphics[scale=0.88]{map.eps}
 	\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{Some examples}
+\small 
+\begin{itemize}
+  \item surf - [surfistas, surfear, deportes acuaticos, olas, windsurf, arena, bañarse, agua tibia, mar]
+ \item navegar - [navegando, navegacion, rio, barco, bote, aguas, lago, isla, orillas]
+ \item velero - [barco, catamaran, bote, lancha, isla, muelle, puerto, yate, bahia]
+ \item viñedo - [bodega, viñedos, bodegas, degustacion, alrededores, supuesto, vino, ademas, casa]
+ \item coral - [hacer snorkel, corales, bucear, arrecife, snorkel, coralina, buceo, peces, aguas cristalinas]
+ \item tragos - [trago, cerveza, bar, bailar, pub, disco, cocteles, cervezas, discoteca]
+ \item pub - [bar, boliche, discoteca, disco, bares, bailar, tragos, musica vivo, tomar cerveza]
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{High Level Metrics Correlations}
+\framesubtitle{Some examples}
+\small 
+\begin{itemize}
+ \item caro - [barato, costoso, economico, precio]
+ \item lluvioso - [soleado, nublado, caluroso, ventoso, amanecio, llovio]
+ \item comprar - [compra, mejor, bueno, comer, buena opcion, recomiendo, conocer, caminar, ciudad]
+ \item comer - [mejor, comprar, comida, buen, bueno, caminar, restaurante, lugar]
+ \item ñandu - [liebres, guanacos, zorro, aves, especies, monos]
+\end{itemize}
+
 \end{frame}
 
 \section{Bibliography}
