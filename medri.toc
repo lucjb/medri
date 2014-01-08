@@ -6,3 +6,4 @@
 \beamer@sectionintoc {4}{Trade offs}{25}{0}{4}
 \beamer@sectionintoc {5}{Random Projections Design}{28}{0}{5}
 \beamer@sectionintoc {6}{High Level Metrics Correlations}{31}{0}{6}
+\beamer@sectionintoc {7}{Bibliography}{36}{0}{7}
