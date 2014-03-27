@@ -7,7 +7,7 @@ width=(max-min)/n #interval width
 hist(x,width)=width*floor(x/width)+width/2.0
 set term png 
 #set output terminal and file
-set output "medri/histogram400.png"
+set output "histogram400.png"
 set xrange [-0.2:0.2]
 #set yrange [0:0.1]
 #to put an empty boundary around the

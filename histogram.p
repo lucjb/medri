@@ -5,7 +5,7 @@ min=-1. #min value
 width=(max-min)/n #interval width
 #function used to map a value to the intervals
 hist(x,width)=width*floor(x/width)+width/2.0
-#set term png 
+set term png 
 #set output terminal and file
 set output "histogramAll.png"
 set xrange [-0.5:0.5]
