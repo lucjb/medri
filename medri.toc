@@ -1,9 +1,0 @@
-\beamer@endinputifotherversion {3.10pt}
-\select@language {spanish}
-\beamer@sectionintoc {1}{Intro}{3}{0}{1}
-\beamer@sectionintoc {2}{Random Projections}{8}{0}{2}
-\beamer@sectionintoc {3}{Empirical Study}{16}{0}{3}
-\beamer@sectionintoc {4}{Trade offs}{25}{0}{4}
-\beamer@sectionintoc {5}{Random Projections Design}{28}{0}{5}
-\beamer@sectionintoc {6}{High Level Metrics Correlations}{31}{0}{6}
-\beamer@sectionintoc {7}{Bibliography}{39}{0}{7}
